@@ -756,7 +756,7 @@ func TestNormalizationFuncShouldChangeFlagName(t *testing.T) {
 	}
 }
 
-// Related to https://github.com/spf13/cobra/issues/521.
+// Related to https://github.com/wlibo666/cobra/issues/521.
 func TestNormalizationSharedFlags(t *testing.T) {
 	f := NewFlagSet("set f", ContinueOnError)
 	g := NewFlagSet("set g", ContinueOnError)
@@ -1247,7 +1247,7 @@ func TestPrintDefaults(t *testing.T) {
 func TestVisitAllFlagOrder(t *testing.T) {
 	fs := NewFlagSet("TestVisitAllFlagOrder", ContinueOnError)
 	fs.SortFlags = false
-	// https://github.com/spf13/pflag/issues/120
+	// https://github.com/wlibo666/pflag/issues/120
 	fs.SetNormalizeFunc(func(f *FlagSet, name string) NormalizedName {
 		return NormalizedName(name)
 	})

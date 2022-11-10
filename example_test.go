@@ -7,7 +7,7 @@ package pflag_test
 import (
 	"fmt"
 
-	"github.com/spf13/pflag"
+	"github.com/wlibo666/pflag"
 )
 
 func ExampleShorthandLookup() {
